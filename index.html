@@ -10,11 +10,11 @@
     <a-scene embedded arjs vr-mode-ui="enabled: false">
       <!-- マーカーを設定する -->
       <a-marker type="pattern" url="pattern-hiro.patt">
-        <a-sphere position="0 0 0" radius="1" color="#EF2D5E"></a-sphere>
+        <a-box position="0 0 1" depth="1" height="2" width="1" color="#EF2D5E"></a-box>
       </a-marker>
 
       <a-marker type="pattern" url="pattern-marker.patt">
-        <a-cylinder position="0 0 0" height="2.0" radius="1" color="#3A60DC"></a-cylinder>
+        <a-cylinder position="0 0 1" height="2.0" radius="1" color="#3A60DC"></a-cylinder>
       </a-marker>
 
       <a-entity camera></a-entity>
