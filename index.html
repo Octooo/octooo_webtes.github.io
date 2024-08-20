@@ -1,15 +1,13 @@
+<!doctype HTML>
 <html>
-  <head>
-    <!-- A-Frameを読み込む -->
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <!-- AR.jsを読み込む -->
-    <script src="js/aframe.min.js"></script>
-    <script src="js/aframe-ar.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden">
-    <!-- シーンの作成、VRモードのUI非表示 -->
-    <a-scene embedded arjs vr-mode-ui="enabled: false">
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<script src="js/aframe.min.js"></script>
+<script src="js/aframe-ar.js"></script>
+<body style="margin: 0px; overflow: hidden;">
+  
+<!-- set detectionMode and matrixCodeType to enable barcode marker detection and custom pattern files -->
+
+<a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
       <a-marker type="pattern" url="pattern-hiro.patt">
         <a-cylinder position="0 0 0" height="4" radius="1" wireframe="false" color="#3A60DC"></a-cylinder>
       </a-marker>
