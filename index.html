@@ -1,13 +1,12 @@
 <!doctype HTML>
 <html>
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <script src="js/aframe.min.js"></script>
 <script src="js/aframe-ar.js"></script>
-<body style="margin: 0px; overflow: hidden;">
   
 <!-- set detectionMode and matrixCodeType to enable barcode marker detection and custom pattern files -->
 
-<a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+<body style="margin: 0px; overflow: hidden;">
+  <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
       <a-marker type="pattern" url="pattern-hiro.patt">
         <a-cylinder position="0 0 0" height="4" radius="1" wireframe="false" color="#3A60DC"></a-cylinder>
       </a-marker>
@@ -61,10 +60,7 @@
       </a-marker>
 
       <a-entity camera></a-entity>
+    
     </a-scene>
-  </body>
-  <script>
-      //glTFの表示が暗くなる問題に対処
-      document.querySelector("a-scene").renderer.gammaOutput=true;
-  </script>
-</html>
+    </body>
+    </html>
